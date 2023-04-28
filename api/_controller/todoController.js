@@ -177,11 +177,5 @@ const todoController = {
           return resData(STATUS.E300.result, STATUS.E300.resultDesc, currentTime());
         }
       },
-
-    async getTest(){
-        const query =  `SELECT * FROM vue.todo`;
-        const [[rows]] = await db.execute(query);
-        return rows;
-    },
 }
 module.exports = todoController;
