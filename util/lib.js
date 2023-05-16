@@ -1,6 +1,6 @@
 const moment = require('moment');
 const lib = {
-    resData:(status, message, resDate, data)=>{
+    resData:(status, message, resData, data)=>{
         return {status, message, resData, data}
     },
 
